@@ -1,7 +1,7 @@
 def swap (x, y):
     # Check if x and y are numeric (i.e. int or float) 
-    if not type(x).__name__ == 'float':
-        return -1
+    if not isinstance(x, (int, float)):
+    return -1
         
     # Swap the values using arithmetic manipulation
     x = x + y
