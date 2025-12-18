@@ -1,10 +1,9 @@
 def swap (x, y):
-    # Check if x and y are numeric (i.e. int or float) 
-    if not isinstance(x, (int, float)):
-        print (-1)
-    if not isinstance(y, (int, float)):
-        print (-1)    
-    # Swap the values using arithmetic manipulation
+# Check if x and y are numeric (i.e. int or float) 
+    numeric_types = (int, float)
+    if not (type(x) in numeric_types and type(y) in numeric_types):
+        print(-1)
+# Swap the values using arithmetic manipulation
     x = x + y
     y = x - y
     x = x - y
