@@ -1,10 +1,9 @@
 def swap (x, y):
     # Check if x and y are numeric (i.e. int or float) 
     try:
-        float(x)
-    except (TypeError, ValueError):
-        print(-1)
-
+    if not type(x).__name__ == 'float':
+        return -1
+        
     # Swap the values using arithmetic manipulation
     x = x + y
     y = x - y
