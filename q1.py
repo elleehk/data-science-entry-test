@@ -1,6 +1,5 @@
 def swap (x, y):
     # Check if x and y are numeric (i.e. int or float) 
-    try:
     if not type(x).__name__ == 'float':
         return -1
         
